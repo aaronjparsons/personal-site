@@ -1,0 +1,33 @@
+/* Variables */
+$header-color: #FAFAFA;
+$header-font: 'Permanent Marker', cursive;
+$particle-bg: #465A64;
+$secondary-font: 'Montserrat', sans-serif;
+$secondary-color: #FAFAFA;
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Permanent+Marker');
+
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  color: $secondary-color;
+  font-family: $secondary-font;
+  font-size: 10px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  position: absolute;
+  z-index: 999;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 70%;
+  padding: 0 24px;
+}
