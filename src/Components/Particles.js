@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import Particles from 'react-particles-js';
 import '../Styles/Particles.scss';
 
-class Header extends Component {
+class Particle extends Component {
   render() {
     return (
       <Particles
@@ -42,4 +42,4 @@ class Header extends Component {
   }
 }
 
-export default Header;
+export default Particle;

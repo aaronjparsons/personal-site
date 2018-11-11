@@ -1,0 +1,16 @@
+@import 'base';
+
+.about {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+
+  p {
+    font-size: 2rem;
+    line-height: 3.5rem;
+  }
+
+  .bold {
+    font-weight: 600;
+  }
+}
