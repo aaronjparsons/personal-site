@@ -1,0 +1,109 @@
+@import 'base';
+
+.project-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.project-box {
+  width: 360px;
+  height: 180px;
+  border-radius: 5px;
+  margin: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+
+  .text-default {
+    opacity: 0;
+    transition: opacity 600ms;
+    font-family: $header-font;
+    font-size: 5rem;
+    color: $particle-bg;
+    background: rgba(250, 250, 250, 0.8);
+    width: 100%;
+    text-align: center;
+  }
+
+  .text-hover {
+    opacity: 0;
+    transition: opacity 600ms;
+    font-size: 1.5rem;
+    color: $particle-bg;
+    background: rgba(250, 250, 250, 0.8);
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.project-box:hover {
+  .text-default {
+    opacity: 1;
+  }
+  .text-hover {
+    opacity: 1;
+  }
+}
+
+.stable {
+  background: url('../assets/ss2.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.stable:hover {
+  background-size: 110%;
+}
+
+.chatty {
+  background: url('../assets/chatty_ss.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.chatty:hover {
+  background-size: 110%;
+}
+
+.jungle {
+  background: url('../assets/ss1.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.jungle:hover {
+  background-size: 110%;
+}
+
+.tweeter {
+  background: url('../assets/tweeter_ss.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.tweeter:hover {
+  background-size: 110%;
+}
+
+.yegbot {
+  background: url('../assets/yegbot_ss.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.yegbot:hover {
+  background-size: 110%;
+}
+
+.tinyapp {
+  background: url('../assets/tinyapp_ss.png');
+  background-size: 100%;
+  background-position: center;
+  transition: background-size 600ms;
+}
+.tinyapp:hover {
+  background-size: 110%;
+}
