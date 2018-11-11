@@ -6,7 +6,7 @@ class Header extends Component {
     return (
       <header style={{'color': `${this.props.fontColor}`}}>
         <div className="container">
-          <h1 style={{'border-top': `5px solid ${this.props.fontColor}`, 'border-bottom': `5px solid ${this.props.fontColor}`}}>Hey, I'm <span className="highlight">Aaron</span></h1>
+          <h1 style={{'borderTop': `5px solid ${this.props.fontColor}`, 'borderBottom': `5px solid ${this.props.fontColor}`}}>Hey, I'm <span className="highlight">Aaron</span></h1>
           <h3>~ A <span className="highlight">full-stack</span> developer in Canada ~</h3>
           <div className="icons">
             <a href="https://github.com/aaronjparsons"><i className="fab fa-github" data-name="Visit My GitHub"></i></a>

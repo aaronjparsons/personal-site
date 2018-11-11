@@ -23,7 +23,7 @@ class Particle extends Component {
               },
               "move": {
                   "direction": "none",
-                  "speed": 1
+                  "speed": 1.25
               },
               "size": {
                   "value": 1.25
