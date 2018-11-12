@@ -17,6 +17,9 @@ class Particle extends Component {
                       "value_area": 1500
                   }
               },
+              "color": {
+                  "value": `${this.props.color}`
+              },
               "line_linked": {
                   "enable": true,
                   "opacity": 0.02

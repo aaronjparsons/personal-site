@@ -31,8 +31,8 @@ class StyleTab extends Component {
     return (
       <div className="styletab-container" style={{top: `${this.state.top}`}}>
         <div className="styletab-info">
-          <button>Change Colors</button>
-          <button>Change Particles</button>
+          <button onClick={this.props.colorChange}>Change Colors</button>
+          <button onClick={this.props.particleChange}>Change Particles</button>
         </div>
         <div className="styletab-toggle" onClick={this.toggleClick}>
           Style Me!
