@@ -7,7 +7,7 @@ class Particle extends Component {
     return (
       <Particles
         className='particles'
-        style={{'background': `${this.props.background}`}}
+        style={{'background-color': `${this.props.background}`, 'transition': 'background-color 600ms'}}
         params={{
           "particles": {
               "number": {

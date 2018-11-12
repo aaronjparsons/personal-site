@@ -1,29 +1,33 @@
 import React, { Component } from 'react';
 import '../Styles/App.scss';
-import styleCombos from '../assets/style-combos.json';
+// import styleCombos from '../assets/style-combos.json';
+import { colorStyles } from '../styleCombinations';
 import Particles from './Particles';
 import StyleTab from './StyleTab';
 import Header from './Header';
 import About from './About';
 import Projects from './Projects';
 
+let styleCounter = 0;
+
 class App extends Component {
   constructor() {
     super();
     this.state = {
-      style: {
-        backgroundColor: '#465A64',
-        textColor: '#FAFAFA'
-      }
+      style: colorStyles[0]
     }
     this.colorChange = this.colorChange.bind(this);
     this.particleChange = this.particleChange.bind(this);
   }
 
   colorChange() {
-    const newStyle = styleCombos[0]
+    if (styleCounter < colorStyles.length - 1) {
+      styleCounter++;
+    } else {
+      styleCounter = 0;
+    }
     this.setState({
-      style: newStyle
+      style: colorStyles[styleCounter]
     });
   }
 
