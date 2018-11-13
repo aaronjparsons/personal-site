@@ -1,8 +1,6 @@
 import React, { Component } from 'react';
 import '../Styles/StyleTab.scss';
 
-const defaultPosition = '-80px';
-
 class StyleTab extends Component {
   constructor() {
     super();

@@ -105,3 +105,9 @@ header {
     }
   }
 }
+
+@media screen and (max-width: 825px) and (orientation: landscape) {
+ .arrows {
+   right: 5%;
+ }
+}
