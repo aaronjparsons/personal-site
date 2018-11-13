@@ -5,32 +5,38 @@ const projects = [
   {
     class: 'stable',
     name: 'Stable',
-    desc: 'React-Native | Firebase | Stripe'
+    desc: 'React-Native | Firebase | Stripe',
+    link: 'https://github.com/aaronjparsons/Final-Project'
   },
   {
     class: 'chatty',
     name: 'Chatty',
-    desc: 'React | Express | Websockets'
+    desc: 'React | Express | Websockets',
+    link: 'https://github.com/aaronjparsons/chatty-app'
   },
   {
     class: 'jungle',
     name: 'Jungle',
-    desc: 'Ruby on Rails | RSpec'
+    desc: 'Ruby on Rails | RSpec',
+    link: 'https://github.com/aaronjparsons/jungle-rails'
   },
   {
     class: 'tweeter',
     name: 'Tweeter',
-    desc: 'Express | MongoDB | jQuery'
+    desc: 'Express | MongoDB | jQuery',
+    link: 'https://github.com/aaronjparsons/tweeter'
   },
   {
     class: 'yegbot',
     name: 'YegBot',
-    desc: 'Javascript | NodeJS'
+    desc: 'Javascript | NodeJS',
+    link: 'https://twitter.com/YegBot'
   },
   {
     class: 'tinyapp',
     name: 'TinyApp',
-    desc: 'Express | EJS'
+    desc: 'Express | EJS',
+    link: 'https://github.com/aaronjparsons/tinyapp-url-shortener'
   }
 ];
 
@@ -42,10 +48,12 @@ class Projects extends Component {
         <div className='project-container' id='projects'>
           {projects.map((project) => {
             return (
-              <div className={`project-box ${project.class}`}>
-                <h1 className="text-default" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.name}`}</h1>
-                <p className="text-hover" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.desc}`}</p>
-              </div>
+              <a href={`${project.link}`}>
+                <div className={`project-box ${project.class}`}>
+                  <h1 className="text-default" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.name}`}</h1>
+                  <p className="text-hover" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.desc}`}</p>
+                </div>
+              </a>
             );
           })}
         </div>
