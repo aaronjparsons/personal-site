@@ -128,3 +128,15 @@ a {
     }
   }
 }
+
+@media screen and (orientation: landscape) {
+  .project-box {
+    .text-default {
+      font-size: 4rem;
+      opacity: 1;
+    }
+    .text-hover {
+      opacity: 1;
+    }
+  }
+}
