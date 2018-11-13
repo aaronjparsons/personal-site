@@ -58,7 +58,7 @@ class App extends Component {
     return (
       <div className='App'>
         <Particles particleParams={this.state.particles} background={this.state.style.backgroundColor} color={this.state.style.textColor}/>
-        <StyleTab colorChange={this.colorChange} particleChange={this.particleChange}/>
+        <StyleTab fontColor={this.state.style.backgroundColor} background={this.state.style.textColor} colorChange={this.colorChange} particleChange={this.particleChange}/>
         <Header fontColor={this.state.style.textColor} />
         <About fontColor={this.state.style.textColor} />
         <Projects fontColor={this.state.style.textColor} />

@@ -3,16 +3,49 @@
 
 .styletab-container {
   position: fixed;
+  left: -10px;
   transition: all 1000ms;
 }
 
 .styletab-info {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 300px;
-  height: 100px;
-  background: blue;
+  height: 80px;
+  border-bottom-right-radius: 5px;
+
+  button {
+    border-radius: 10px;
+    color: white;
+    padding: 8px;
+    font-family: $secondary-font;
+    font-size: 1.25rem;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 8px;
+    cursor: pointer;
+  }
 }
 
 .styletab-toggle {
-  width: 35%;
-  background: blue;
+  width: 45%;
+  border-bottom-right-radius: 5px;
+  transform: skewX(-40deg);
+  -ms-transform: skewX(-40deg);
+  -webkit-transform: skewX(-40deg);
+
+  p {
+    margin: 0;
+    font-size: 1.5rem;
+    text-align: center;
+    transform: skewX(40deg);
+    -ms-transform: skewX(40deg);
+    -webkit-transform: skewX(40deg);
+  }
+}
+
+.styletab-toggle:hover {
+  cursor: pointer;
 }

@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import '../Styles/StyleTab.scss';
 
-const defaultPosition = '-100px';
+const defaultPosition = '-80px';
 
 class StyleTab extends Component {
   constructor() {
@@ -30,12 +30,38 @@ class StyleTab extends Component {
   render() {
     return (
       <div className="styletab-container" style={{top: `${this.state.top}`}}>
-        <div className="styletab-info">
-          <button onClick={this.props.colorChange}>Change Colors</button>
-          <button onClick={this.props.particleChange}>Change Particles</button>
+        <div 
+          className="styletab-info" 
+          style={{
+            'background-color': `${this.props.background}`, 
+            'transition': 'background-color 600ms'
+          }}>
+          <button 
+            onClick={this.props.colorChange}
+            style={{
+              'background-color': `${this.props.background}`,
+              'border': `2px solid ${this.props.fontColor}`,
+              'color': `${this.props.fontColor}`,
+              'transition': 'all 600ms'
+            }}>Change Colors</button>
+          <button 
+            onClick={this.props.particleChange}
+            style={{
+              'background-color': `${this.props.background}`,
+              'border': `2px solid ${this.props.fontColor}`,
+              'color': `${this.props.fontColor}`,
+              'transition': 'all 600ms'
+            }}>Change Particles</button>
         </div>
-        <div className="styletab-toggle" onClick={this.toggleClick}>
-          Style Me!
+        <div 
+          className="styletab-toggle" 
+          onClick={this.toggleClick} 
+          style={{
+            'background-color': `${this.props.background}`, 
+            'color': `${this.props.fontColor}`, 
+            'transition': 'all 600ms'
+          }}>
+          <p>Style Me!</p>
         </div>
       </div>
     );
