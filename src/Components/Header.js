@@ -11,7 +11,7 @@ class Header extends Component {
               'borderTop': `5px solid ${this.props.fontColor}`, 
               'borderBottom': `5px solid ${this.props.fontColor}`
             }}>Hey, I'm Aaron</h1>
-          <h3>~ A <span style={{'text-decoration': 'underline'}}>full-stack</span> developer in Canada ~</h3>
+          <h3>~ A <span style={{'textDecoration': 'underline'}}>full-stack</span> developer in Canada ~</h3>
           <div className="icons">
             <a href="https://github.com/aaronjparsons">
               <i className="fab fa-github" data-name="Visit My GitHub"></i>

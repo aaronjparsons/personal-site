@@ -33,13 +33,13 @@ class StyleTab extends Component {
         <div 
           className="styletab-info" 
           style={{
-            'background-color': `${this.props.background}`, 
+            'backgroundColor': `${this.props.background}`, 
             'transition': 'background-color 600ms'
           }}>
           <button 
             onClick={this.props.colorChange}
             style={{
-              'background-color': `${this.props.background}`,
+              'backgroundColor': `${this.props.background}`,
               'border': `2px solid ${this.props.fontColor}`,
               'color': `${this.props.fontColor}`,
               'transition': 'all 600ms'
@@ -47,7 +47,7 @@ class StyleTab extends Component {
           <button 
             onClick={this.props.particleChange}
             style={{
-              'background-color': `${this.props.background}`,
+              'backgroundColor': `${this.props.background}`,
               'border': `2px solid ${this.props.fontColor}`,
               'color': `${this.props.fontColor}`,
               'transition': 'all 600ms'
@@ -57,7 +57,7 @@ class StyleTab extends Component {
           className="styletab-toggle" 
           onClick={this.toggleClick} 
           style={{
-            'background-color': `${this.props.background}`, 
+            'backgroundColor': `${this.props.background}`, 
             'color': `${this.props.fontColor}`, 
             'transition': 'all 600ms'
           }}>
