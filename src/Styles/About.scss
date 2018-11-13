@@ -1,7 +1,7 @@
 @import 'base';
 
 .about {
-  height: 100vh;
+  min-height: 100vh;
 
   h1 {
     margin-left: -8%;
@@ -15,5 +15,11 @@
 
   .bold {
     font-weight: 600;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .about {
+    margin-bottom: 150px !important;
   }
 }
