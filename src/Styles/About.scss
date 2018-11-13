@@ -2,7 +2,11 @@
 
 .about {
   height: 100vh;
-  transition: all 600ms;
+
+  h1 {
+    margin-left: -8%;
+    font-size: 3rem;
+  }
 
   p {
     font-size: 2rem;

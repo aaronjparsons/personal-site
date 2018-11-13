@@ -73,7 +73,10 @@ class App extends Component {
           background={this.state.style.backgroundColor} 
         />
         <About fontColor={this.state.style.textColor} />
-        <Projects fontColor={this.state.style.textColor} />
+        <Projects 
+          fontColor={this.state.style.backgroundColor} 
+          background={this.state.style.textColor}
+        />
       </div>
     );
   }

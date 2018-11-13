@@ -1,35 +1,53 @@
 import React, { Component } from 'react';
 import '../Styles/Projects.scss';
 
+const projects = [
+  {
+    class: 'stable',
+    name: 'Stable',
+    desc: 'React-Native | Firebase | Stripe'
+  },
+  {
+    class: 'chatty',
+    name: 'Chatty',
+    desc: 'React | Express | Websockets'
+  },
+  {
+    class: 'jungle',
+    name: 'Jungle',
+    desc: 'Ruby on Rails | RSpec'
+  },
+  {
+    class: 'tweeter',
+    name: 'Tweeter',
+    desc: 'Express | MongoDB | jQuery'
+  },
+  {
+    class: 'yegbot',
+    name: 'YegBot',
+    desc: 'Javascript | NodeJS'
+  },
+  {
+    class: 'tinyapp',
+    name: 'TinyApp',
+    desc: 'Express | EJS'
+  }
+];
+
 class Projects extends Component {
   render() {
     return (
-      <div className="container">
-        <div className="project-container" id="projects">
-          <div className="project-box stable">
-            <h1 className="text-default">Stable</h1>
-            <p className="text-hover">React-Native | Firebase | Stripe</p>
-          </div>
-          <div className="project-box chatty">
-            <h1 className="text-default">Chatty</h1>
-            <p className="text-hover">React | Express | Websockets</p>
-          </div>
-          <div className="project-box jungle">
-            <h1 className="text-default">Jungle</h1>
-            <p className="text-hover">Ruby on Rails | RSpec</p>
-          </div>
-          <div className="project-box tweeter">
-            <h1 className="text-default">Tweeter</h1>
-            <p className="text-hover">Express | MongoDB | jQuery</p>
-          </div>
-          <div className="project-box yegbot">
-            <h1 className="text-default">YegBot</h1>
-            <p className="text-hover">Javascript | NodeJS</p>
-          </div>
-          <div className="project-box tinyapp">
-            <h1 className="text-default">TinyApp</h1>
-            <p className="text-hover">Express | EJS</p>
-          </div>
+      <div className='container'>
+        <h1 style={{'color': `${this.props.background}`, 'transition': 'color 600ms'}}>PROJECTS:</h1>
+        <div className='project-container' id='projects'>
+          {projects.map((project) => {
+            return (
+              <div className={`project-box ${project.class}`}>
+                <h1 className="text-default" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.name}`}</h1>
+                <p className="text-hover" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.desc}`}</p>
+              </div>
+            );
+          })}
         </div>
       </div>
     );
