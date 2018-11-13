@@ -8,7 +8,7 @@ class StyleTab extends Component {
     super();
     this.state = {
       position: 'hidden',
-      top: defaultPosition
+      className: 'styletab-container'
     }
     this.toggleClick = this.toggleClick.bind(this);
   }
@@ -17,19 +17,19 @@ class StyleTab extends Component {
     if (this.state.position === 'hidden') {
       this.setState({
         position: 'show',
-        top: '0'
+        className: 'styletab-container-open'
       });
     } else {
       this.setState({
         position: 'hidden',
-        top: defaultPosition
+        className: 'styletab-container'
       });
     }
   }
 
   render() {
     return (
-      <div className="styletab-container" style={{top: `${this.state.top}`}}>
+      <div className={`${this.state.className}`}>
         <div 
           className="styletab-info" 
           style={{

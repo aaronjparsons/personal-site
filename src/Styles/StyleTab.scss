@@ -4,6 +4,18 @@
 .styletab-container {
   position: fixed; 
   left: -15px;
+  transform: translateY(-80px);
+  -ms-transform: translateY(-80px);
+  -webkit-transform: translateY(-80px);
+  transition: all 1000ms;
+}
+
+.styletab-container-open {
+  position: fixed; 
+  left: -15px;
+  transform: translateY(0px);
+  -ms-transform: translateY(0px);
+  -webkit-transform: translateY(0px);
   transition: all 1000ms;
 }
 
