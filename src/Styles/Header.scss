@@ -3,7 +3,7 @@
 header {
   padding: 28px;
   text-align: center;
-  height: 100vh;
+  min-height: 100vh;
   transition: color 600ms;
   
   .container {
@@ -52,7 +52,7 @@ header {
     }
 
     h3 {
-      font-size: 2rem;
+      font-size: 1.75rem;
     }
   }
 }

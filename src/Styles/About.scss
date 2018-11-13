@@ -21,5 +21,9 @@
 @media screen and (max-width: 600px) {
   .about {
     margin-bottom: 150px !important;
+
+    p {
+      font-size: 1.5rem;
+    }
   }
 }
