@@ -4,7 +4,7 @@ header {
   padding: 28px;
   text-align: center;
   height: 100vh;
-  transition: all 600ms;
+  transition: color 600ms;
   
   .container {
     margin-top: 30vh;
@@ -46,7 +46,7 @@ header {
 
     i {
       margin: 0 10px;
-      // transition: all 600ms;
+      transition: transform 300ms;
     }
     i:hover {
       transform: scale(1.2);

@@ -3,44 +3,18 @@ import Particles from 'react-particles-js';
 import '../Styles/Particles.scss';
 
 class Particle extends Component {
+
+  componentDidMount() {
+    const particleStyle = this.props.particleParams;
+    console.log(particleStyle);
+  }
+
   render() {
     return (
       <Particles
         className='particles'
-        style={{'background-color': `${this.props.background}`, 'transition': 'background-color 600ms'}}
-        params={{
-          "particles": {
-              "number": {
-                  "value": 60,
-                  "density": {
-                      "enable": true,
-                      "value_area": 1500
-                  }
-              },
-              "color": {
-                  "value": `${this.props.color}`
-              },
-              "line_linked": {
-                  "enable": true,
-                  "opacity": 0.02
-              },
-              "move": {
-                  "direction": "none",
-                  "speed": 1.25
-              },
-              "size": {
-                  "value": 1.25
-              },
-              "opacity": {
-                  "anim": {
-                      "enable": true,
-                      "speed": 1,
-                      "opacity_min": 0.05
-                  }
-              }
-          },
-          "retina_detect": true
-      }} />
+        style={{'background-color': `${this.props.background}`, 'transition': 'all 600ms'}}
+        params={this.props.particleParams} />
     );
   }
 }
