@@ -115,21 +115,23 @@ a {
   background-size: 110%;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 697px) {
   .project-box {
-    width: 80vw;
+    width: 240px;
+    height: 120px;
 
     .text-default {
-      font-size: 4rem;
+      font-size: 3.5rem;
       opacity: 1;
     }
     .text-hover {
+      font-size: 1.5rem;
       opacity: 1;
     }
   }
 }
 
-@media screen and (orientation: landscape) {
+@media screen and (max-width: 825px) and (orientation: landscape) {
   .project-box {
     .text-default {
       font-size: 4rem;
