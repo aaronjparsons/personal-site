@@ -23,15 +23,6 @@ header {
     margin: 0;
   }
 
-  .highlight {
-    animation: FadeIn 1s ease-in both;
-
-    @keyframes FadeIn {
-      0% { color: inherit; }
-      100% { color: rgb(154, 82, 226); }
-    }
-  }
-
   .icons {
     display: flex;
     justify-content: center;
