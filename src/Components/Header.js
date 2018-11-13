@@ -27,6 +27,7 @@ class Header extends Component {
             </a>
           </div>
         </div>
+        <i className="fas fa-angle-double-down arrows"></i>
       </header>
     );
   }

@@ -43,6 +43,31 @@ header {
       transform: scale(1.2);
     }
   }
+
+  .arrows {
+    margin: 0;
+    font-size: 3.5rem;
+    position: absolute;
+    bottom: 2%;
+    animation: bounce 1s infinite alternate;
+    -webkit-animation: bounce 1s infinite alternate;
+  }
+  @keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
+  @-webkit-keyframes bounce {
+    from {
+      transform: translateY(0px);
+    }
+    to {
+      transform: translateY(-15px);
+    }
+  }
 }
 
 @media screen and (max-width: 600px) {
@@ -53,6 +78,18 @@ header {
 
     h3 {
       font-size: 1.75rem;
+    }
+  }
+}
+
+@media screen and (max-width: 367px) {
+  header {
+    .container {
+      margin-top: 20vh;
+    }
+
+    h1 {
+      font-size: 3.75rem;
     }
   }
 }
