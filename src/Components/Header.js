@@ -5,6 +5,8 @@ class Header extends Component {
   constructor() {
     super();
     this.state = {
+      iconDescText: '',
+      iconDescOpacity: 0,
       arrowOpacity: 100
     }
   }
@@ -12,7 +14,9 @@ class Header extends Component {
   componentDidMount() {
     const arrows = document.querySelector('.arrows');
     const windowHeight = window.innerHeight;
-    
+    const icons = document.querySelectorAll('.icon');
+
+    // Add scroll event listener to the window
     window.addEventListener('scroll', ()=> {
       const positionFromTop = arrows.getBoundingClientRect().top;
       let opacity = Math.round(positionFromTop) / windowHeight;
@@ -28,6 +32,21 @@ class Header extends Component {
         });
       }
     });
+
+    // Add mouseover and mouseout event listeners to the icons
+    icons.forEach((icon) => {
+      icon.addEventListener('mouseover', () => {
+        this.setState({
+          iconDescOpacity: 1,
+          iconDescText: icon.dataset.name
+        });
+      });
+      icon.addEventListener('mouseout', () => {
+        this.setState({
+          iconDescOpacity: 0,
+        });
+      });
+    });
   }
   
   render() {
@@ -42,18 +61,19 @@ class Header extends Component {
           <h3>~ A <span style={{'textDecoration': 'underline'}}>full-stack</span> developer in Canada ~</h3>
           <div className="icons">
             <a href="https://github.com/aaronjparsons">
-              <i className="fab fa-github" data-name="Visit My GitHub"></i>
+              <i className="fab fa-github icon" data-name="GitHub"></i>
             </a>
             <a href="https://www.linkedin.com/in/aaron-parsons">
-              <i className="fab fa-linkedin-in" data-name="Connect On LinkedIn"></i>
+              <i className="fab fa-linkedin-in icon" data-name="LinkedIn"></i>
             </a>
             <a href="https://resume.creddle.io/resume/21jjsqqu772">
-              <i className="far fa-file-alt" data-name="View My Resume"></i>
+              <i className="far fa-file-alt icon" data-name="Resume"></i>
             </a>
             <a href="mailto:aaron.parsons@live.ca">
-              <i className="far fa-envelope" data-name="Send Me An Email"></i>
+              <i className="far fa-envelope icon" data-name="Email"></i>
             </a>
           </div>
+          <h3 className="icon-desc" style={{'opacity': `${this.state.iconDescOpacity}`, 'transition': 'opacity 600ms'}}>{this.state.iconDescText}</h3>
         </div>
         <i className="fas fa-angle-double-down arrows" style={{'opacity': `${this.state.arrowOpacity}`}}></i>
       </header>
