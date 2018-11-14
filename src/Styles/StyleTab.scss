@@ -8,6 +8,7 @@
   -ms-transform: translateY(-80px);
   -webkit-transform: translateY(-80px);
   transition: all 1000ms;
+  z-index: 100;
 }
 
 .styletab-container-open {
@@ -17,6 +18,7 @@
   -ms-transform: translateY(0px);
   -webkit-transform: translateY(0px);
   transition: all 1000ms;
+  z-index: 100;
 }
 
 .styletab-info {
