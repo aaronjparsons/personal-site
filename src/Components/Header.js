@@ -2,6 +2,34 @@ import React, { Component } from 'react';
 import '../Styles/Header.scss';
 
 class Header extends Component {
+  constructor() {
+    super();
+    this.state = {
+      arrowOpacity: 100
+    }
+  }
+
+  componentDidMount() {
+    const arrows = document.querySelector('.arrows');
+    const windowHeight = window.innerHeight;
+    
+    window.addEventListener('scroll', ()=> {
+      const positionFromTop = arrows.getBoundingClientRect().top;
+      let opacity = Math.round(positionFromTop) / windowHeight;
+
+      // Accelerate the fade out past the halfway point
+      if (opacity < 0.5) {
+        opacity = opacity - 0.1;
+      }
+      
+      if (opacity > 0) {
+        this.setState({
+          arrowOpacity: opacity
+        });
+      }
+    });
+  }
+  
   render() {
     return (
       <header style={{'color': `${this.props.fontColor}`}}>
@@ -27,7 +55,7 @@ class Header extends Component {
             </a>
           </div>
         </div>
-        <i className="fas fa-angle-double-down arrows"></i>
+        <i className="fas fa-angle-double-down arrows" style={{'opacity': `${this.state.arrowOpacity}`}}></i>
       </header>
     );
   }
