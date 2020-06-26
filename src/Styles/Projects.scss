@@ -48,6 +48,8 @@ a {
 }
 
 .project-box:hover {
+  background-size: 110%;
+
   .text-default {
     opacity: 1;
   }
@@ -62,9 +64,6 @@ a {
   background-position: center;
   transition: background-size 600ms;
 }
-.stable:hover {
-  background-size: 110%;
-}
 
 .chatty {
   background: url('../assets/chatty_ss.png') no-repeat;
@@ -72,18 +71,12 @@ a {
   background-position: center;
   transition: background-size 600ms;
 }
-.chatty:hover {
-  background-size: 110%;
-}
 
-.jungle {
-  background: url('../assets/ss1.png') no-repeat;
+.eftfg {
+  background: url('../assets/eftfg_ss.png') no-repeat;
   background-size: 100%;
   background-position: center;
   transition: background-size 600ms;
-}
-.jungle:hover {
-  background-size: 110%;
 }
 
 .tweeter {
@@ -92,9 +85,6 @@ a {
   background-position: center;
   transition: background-size 600ms;
 }
-.tweeter:hover {
-  background-size: 110%;
-}
 
 .yegbot {
   background: url('../assets/yegbot_ss.png');
@@ -102,18 +92,12 @@ a {
   background-position: center;
   transition: background-size 600ms;
 }
-.yegbot:hover {
-  background-size: 110%;
-}
 
 .tinyapp {
   background: url('../assets/tinyapp_ss.png');
   background-size: 100%;
   background-position: center;
   transition: background-size 600ms;
-}
-.tinyapp:hover {
-  background-size: 110%;
 }
 
 @media screen and (max-width: 697px) {

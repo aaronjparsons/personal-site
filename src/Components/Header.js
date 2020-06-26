@@ -25,7 +25,7 @@ class Header extends Component {
       if (opacity < 0.5) {
         opacity = opacity - 0.1;
       }
-      
+
       if (opacity > 0) {
         this.setState({
           arrowOpacity: opacity
@@ -48,25 +48,25 @@ class Header extends Component {
       });
     });
   }
-  
+
   render() {
     return (
       <header style={{'color': `${this.props.fontColor}`}}>
         <div className="container">
-          <h1 
+          <h1
             style={{
-              'borderTop': `5px solid ${this.props.fontColor}`, 
+              'borderTop': `5px solid ${this.props.fontColor}`,
               'borderBottom': `5px solid ${this.props.fontColor}`
             }}>Hey, I'm Aaron</h1>
           <h3>~ A <span style={{'textDecoration': 'underline'}}>full-stack</span> developer in Canada ~</h3>
           <div className="icons">
-            <a href="https://github.com/aaronjparsons">
+            <a href="https://github.com/aaronjparsons" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-github icon" data-name="GitHub"></i>
             </a>
-            <a href="https://www.linkedin.com/in/aaron-parsons">
+            <a href="https://www.linkedin.com/in/aaron-parsons" target="_blank" rel="noopener noreferrer">
               <i className="fab fa-linkedin-in icon" data-name="LinkedIn"></i>
             </a>
-            <a href="https://resume.creddle.io/resume/21jjsqqu772">
+            <a href="https://resume.creddle.io/resume/21jjsqqu772" target="_blank" rel="noopener noreferrer">
               <i className="far fa-file-alt icon" data-name="Resume"></i>
             </a>
             <a href="mailto:aaron.parsons@live.ca">

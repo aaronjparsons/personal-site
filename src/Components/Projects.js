@@ -3,6 +3,12 @@ import '../Styles/Projects.scss';
 
 const projects = [
   {
+    class: 'eftfg',
+    name: 'EFTFG',
+    desc: 'Vue | Gridsome',
+    link: 'https://eftfg.com'
+  },
+  {
     class: 'stable',
     name: 'Stable',
     desc: 'React-Native | Firebase | Stripe',
@@ -13,12 +19,6 @@ const projects = [
     name: 'Chatty',
     desc: 'React | Express | Websockets',
     link: 'https://github.com/aaronjparsons/chatty-app'
-  },
-  {
-    class: 'jungle',
-    name: 'Jungle',
-    desc: 'Ruby on Rails | RSpec',
-    link: 'https://github.com/aaronjparsons/jungle-rails'
   },
   {
     class: 'tweeter',
@@ -48,7 +48,7 @@ class Projects extends Component {
         <div className='project-container' id='projects'>
           {projects.map((project, index) => {
             return (
-              <a href={`${project.link}`} key={index}>
+              <a href={`${project.link}`} key={index} target="_blank" rel="noopener noreferrer">
                 <div className={`project-box ${project.class}`}>
                   <h1 className="text-default" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.name}`}</h1>
                   <p className="text-hover" style={{'backgroundColor': `${this.props.background}`, 'color': `${this.props.fontColor}`}}>{`${project.desc}`}</p>

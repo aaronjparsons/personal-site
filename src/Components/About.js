@@ -7,8 +7,10 @@ class About extends Component {
       <div className="container about">
         <div style={{'paddingTop': '10%', 'color': `${this.props.fontColor}`, 'transition': 'color 600ms'}}>
           <h1>ABOUT ME:</h1>
-          <p>I've always been interested in programming and began teaching myself during my spare time, and have since jumped in head first, always striving to improve my skills. I enjoy being faced with new and interesting problems and implementing creative solutions. I am a strong team player with experience working efficiently in a team from past jobs, but am also very individually motivated and able to work independently.</p>
-          <p>Currently working with <span className='bold'>Javascript</span>, <span className='bold'>Vue</span>, <span className='bold'>Node.js</span>, <span className='bold'>PHP</span>, <span className='bold'>mySQL</span>, and <span className='bold'>SASS</span>.</p>
+          <p>Junior full stack developer who loves writing code, solving problems, and expressing creativity through technology and the modern web.</p>
+          <p>
+          With a drive for constant self improvement, I'm focused on always building upon my skill set and expanding my knowledge, allowing me to tackle any project and write clean code with best practices in mind.</p>
+          <p>Currently working with <span className='bold'>Javascript</span>, <span className='bold'>Vue</span>, <span className='bold'>Node.js</span>, <span className='bold'>MongoDB/Firebase</span>, and <span className='bold'>SASS</span>.</p>
         </div>
       </div>
     );

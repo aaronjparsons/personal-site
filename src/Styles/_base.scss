@@ -1,12 +1,12 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Permanent+Marker');
+
 /* Variables */
 $header-color: #FAFAFA;
-$header-font: 'Permanent Marker', cursive;
+$header-font: 'Permanent Marker', sans-serif;
 $particle-bg: #465A64;
 $secondary-font: 'Montserrat', sans-serif;
 $secondary-color: #FAFAFA;
-
-/* Fonts */
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600|Permanent+Marker');
 
 * {
   box-sizing: border-box;
